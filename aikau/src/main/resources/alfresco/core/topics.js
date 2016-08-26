@@ -762,6 +762,23 @@ define([],function() {
       GET_SITES: "ALF_GET_SITES",
 
       /**
+       * This topic can be published to retrieve a list of tasks
+       * 
+       * @instance
+       * @type {string}
+       * @default
+       * @since 1.0.NEXT
+       *
+       * @event
+       * @property {string} [state=null] An optional state that the tasks must match (e.g. "COMPLETED")
+       * @property {number} [prority=null] An optional priority level that the tasks must match
+       * @property {boolean} [pooled=false] Whether or not pooled tasks should be retrieved
+       * @property {string} [dueAfter=null] An optional date that the tasks must be due after
+       * @property {string} [dueBefore=null] An optional date that the tasks must be due before
+       */
+      GET_TASKS: "ALF_GET_TASKS",
+
+      /**
        * This topic can be published to request a list of all available users in the Alfresco Repository.
        * This request is expected to be handled by the [UserService]{@link module:alfresco/services/UserService}.
        * The results are published on 'alfResponseTopic' provided, and are defined as an array as attribute "items"

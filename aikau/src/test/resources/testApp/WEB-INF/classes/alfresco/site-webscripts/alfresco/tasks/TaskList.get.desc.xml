@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Tasks List</shortname>
+  <description>This page tests the widgets and services used for working with workflow tasks.</description>
+  <family>aikau-unit-tests</family>
+  <url>/Tasks</url>
+</webscript>
